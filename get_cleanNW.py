@@ -91,10 +91,12 @@ print('Done saving raw '+ str(end - start))
 
 
 # Now clean and consolidate edges
-graph_attrs = {"crs": "EPSG:4326"}
 #assert nodesk.index.is_unique and edgesk.index.is_unique
-graph_attrs = {'crs': 'epsg:4326', 'simplified': True} # simplify
+graph_attrs = {'crs': 'epsg:4326', 'simplified': False}
 G2 = ox.convert.graph_from_gdfs(nodesk, edgesk, graph_attrs)
+G2 = ox.simplify_graph(G2,remove_rings=True)
+end = time.time()
+print('Done simplifying '+ str(end - start))
 
 #Consolidate edges
 multi_di_graph_utm = ox.project_graph(G2)
