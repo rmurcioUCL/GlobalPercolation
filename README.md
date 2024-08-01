@@ -1,7 +1,7 @@
 # GlobalPercolation
 A variety of scripts to acquire OSM data to build a hierarchical percolation dataset
 
-Usage:
+Requirements for get_cleanNW.py 
 
 1. Get the shape file from OSM.
 2. Extract on a new layer only the roads -
@@ -15,6 +15,9 @@ Usage:
 
 Still need to ensure it can be done in one run or have small save scripts.
 
-
 Notes :
 On a 658 Mb file (Australia), Point 3 took 5 minutes. After running 4, the file went to 340 Mb
+
+Once you have a clean file (_raw_clean.gpkg) we can run percolation.py. We need to manually modify the name at this point in the script. 
+This script will generate three directories: clustersinfoT - Number of clusters and LCC info per threshold; membTablesT - Membership data per Th (nodeid,clusterid); cluster_sizesT - cluster sizes per Th (cluster_id,cluster_size)
+
