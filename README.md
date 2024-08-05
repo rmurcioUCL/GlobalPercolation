@@ -12,7 +12,8 @@ We aim to go from OSM to a MultiDigraph that we can use in osmnx consolidate rou
 * South America
 All downloadable from geofabrik as pbf.
 
-A route map is in this <a href="https://www.markdownguide.org](https://lucid.app/lucidchart/05c17c1d-c4d2-42d2-b877-642a685b454f/edit?viewport_loc=-1355%2C40%2C2125%2C1105%2C0_0&invitationId=inv_76e1f82c-d7ff-431c-a19c-4df6ed9cdd9c" target="_blank">diagram</a>
+A route map is in this [diagram](https://www.markdownguide.org](https://lucid.app/lucidchart/05c17c1d-c4d2-42d2-b877-642a685b454f/edit?viewport_loc=-1355%2C40%2C2125%2C1105%2C0_0&invitationId=inv_76e1f82c-d7ff-431c-a19c-4df6ed9cdd9c)
+
 
 ## From a shapefile
 In the contryBycountrySHP.md document, you can find a fully functional algorithm for this if you download shapefiles from OSM. This is quite useful for individual countries like all the islands.
