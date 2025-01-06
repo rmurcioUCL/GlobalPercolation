@@ -36,7 +36,6 @@ osmosis --read-pbf /home/orkcloud/research/africa/south-africa-and-lesotho-lates
 </code>
 !!The above line works fine but still need to write this in the form a procedure to be useful for eveyone.
 
-## From a pdf/osm file
  - Tobe writeup
 
 
